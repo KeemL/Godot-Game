@@ -1,0 +1,450 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwakevb0gdbsf"]
+
+[ext_resource type="Script" path="res://BG.gd" id="1_1f24p"]
+[ext_resource type="Texture2D" uid="uid://bx0px1f22jfcm" path="res://Free/Background/Brown.png" id="1_2p37n"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_1f24p")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(64, 0)
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(288, 32)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown12" type="Sprite2D" parent="ParallaxLayer/Brown12/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown12/Brown12/Brown12/Brown12/Brown12"]
+position = Vector2(128, 0)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 32)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown2" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 96)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown3" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 160)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown4" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 224)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown5" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 288)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown6" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 352)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown7" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 416)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown8" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 480)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown9" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 544)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown10" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 608)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown11" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(32, 672)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(160, 32)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
+
+[node name="Brown13" type="Sprite2D" parent="ParallaxLayer/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13/Brown13"]
+position = Vector2(0, 64)
+texture = ExtResource("1_2p37n")
