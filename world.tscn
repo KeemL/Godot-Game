@@ -1,11 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://g0oiwr8rueip"]
+[gd_scene load_steps=16 format=3 uid="uid://g0oiwr8rueip"]
 
 [ext_resource type="Texture2D" uid="uid://dtfp44e06u4s6" path="res://Free/Terrain/Terrain (16x16).png" id="1_153nc"]
 [ext_resource type="Script" path="res://BG.gd" id="1_gx4ah"]
 [ext_resource type="PackedScene" uid="uid://dgcu1ksg6bj6g" path="res://Player/Player.tscn" id="1_qe482"]
 [ext_resource type="Texture2D" uid="uid://bx0px1f22jfcm" path="res://Free/Background/Brown.png" id="2_8yirc"]
 [ext_resource type="PackedScene" uid="uid://tf4rjyb03mqx" path="res://frog.tscn" id="5_2etwl"]
-[ext_resource type="PackedScene" uid="uid://bv0e4tt7o2o8n" path="res://Collectables/cherry.tscn" id="6_jdb8l"]
+[ext_resource type="PackedScene" uid="uid://bv0e4tt7o2o8n" path="res://Collectables/melon.tscn" id="6_jdb8l"]
+[ext_resource type="Texture2D" uid="uid://pcg763dx0iay" path="res://Free/Items/Hearts/lives.png" id="7_0fucq"]
+[ext_resource type="Script" path="res://Lives.gd" id="7_3eus2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mu57n"]
 texture = ExtResource("1_153nc")
@@ -513,6 +515,12 @@ func _process(delta):
 	
 "
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8g83r"]
+load_path = "res://.godot/imported/lives.png-e47197012bd70577ecb1b50e558fce33.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_osh2d"]
+load_path = "res://.godot/imported/lives.png-e47197012bd70577ecb1b50e558fce33.ctex"
+
 [node name="World" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1013,5 +1021,29 @@ script = SubResource("GDScript_0yjke")
 
 [node name="Collectables" type="Node2D" parent="."]
 
-[node name="Cherry" parent="Collectables" instance=ExtResource("6_jdb8l")]
+[node name="Melon" parent="Collectables" instance=ExtResource("6_jdb8l")]
 position = Vector2(319, 220)
+
+[node name="Melon2" parent="Collectables" instance=ExtResource("6_jdb8l")]
+position = Vector2(140, 220)
+
+[node name="Melon3" parent="Collectables" instance=ExtResource("6_jdb8l")]
+position = Vector2(502, 218)
+
+[node name="Lives" type="Node2D" parent="."]
+script = ExtResource("7_3eus2")
+
+[node name="life 1" type="Sprite2D" parent="Lives"]
+position = Vector2(536, 437)
+scale = Vector2(0.0770042, 0.0770042)
+texture = SubResource("CompressedTexture2D_8g83r")
+
+[node name="life 2" type="Sprite2D" parent="Lives"]
+position = Vector2(579, 436)
+scale = Vector2(0.0770042, 0.0770042)
+texture = SubResource("CompressedTexture2D_osh2d")
+
+[node name="life 3" type="Sprite2D" parent="Lives"]
+position = Vector2(621, 437)
+scale = Vector2(0.0770042, 0.0770042)
+texture = ExtResource("7_0fucq")
