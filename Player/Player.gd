@@ -41,4 +41,6 @@ func _physics_process(delta):
 	
 	if Game.playerHP <= 0:
 		queue_free()
-		get_tree().change_scene_to_file("res://world.tscn")
+		get_tree().change_scene_to_file("res://main.tscn")
+	elif Game.Gold == 30:
+		get_tree().change_scene_to_file("res://main.tscn")

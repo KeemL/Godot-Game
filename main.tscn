@@ -1,14 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqomd04w0sx08"]
+[gd_scene load_steps=4 format=3 uid="uid://cqomd04w0sx08"]
 
 [ext_resource type="PackedScene" uid="uid://bwakevb0gdbsf" path="res://BG.tscn" id="1_0eqok"]
+[ext_resource type="Texture2D" uid="uid://pv2ret5dj263" path="res://Free/Background/back.png" id="1_hqp1f"]
 
 [sub_resource type="GDScript" id="GDScript_5wh2s"]
 script/source = "extends Node2D
 
 
 func _ready():
+	Game.playerHP = 3;
+	Game.Gold = 0;
 	Utils.saveGame()
 	Utils.loadGame()
+	
 func _on_quit_pressed():
 	get_tree().quit()
 
@@ -20,6 +24,11 @@ func _on_play_pressed():
 
 [node name="Main" type="Node2D" parent="."]
 script = SubResource("GDScript_5wh2s")
+
+[node name="SKY BG" type="Sprite2D" parent="Main"]
+position = Vector2(640, 352)
+scale = Vector2(3.33333, 2.93333)
+texture = ExtResource("1_hqp1f")
 
 [node name="Play" type="Button" parent="Main"]
 offset_left = 468.0

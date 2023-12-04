@@ -274,7 +274,7 @@ _data = {
 "idle": SubResource("Animation_5w8hj")
 }
 
-[node name="Cherry" type="Area2D"]
+[node name="Melon" type="Area2D"]
 script = SubResource("GDScript_p0v2p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
