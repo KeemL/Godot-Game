@@ -544,3 +544,4 @@ shape = SubResource("RectangleShape2D_b2w65")
 [connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
 [connection signal="body_entered" from="PlayerDeath" to="." method="_on_player_death_body_entered"]
 [connection signal="body_entered" from="PlayerCollision" to="." method="_on_player_collision_body_entered"]
+[connection signal="property_list_changed" from="PlayerCollision/CollisionShape2D" to="." method="_on_collision_shape_2d_property_list_changed"]
