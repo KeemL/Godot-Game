@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://g0oiwr8rueip"]
+[gd_scene load_steps=17 format=3 uid="uid://g0oiwr8rueip"]
 
 [ext_resource type="Texture2D" uid="uid://dtfp44e06u4s6" path="res://Free/Terrain/Terrain (16x16).png" id="1_153nc"]
 [ext_resource type="Script" path="res://BG.gd" id="1_gx4ah"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bv0e4tt7o2o8n" path="res://Collectables/melon.tscn" id="6_jdb8l"]
 [ext_resource type="Texture2D" uid="uid://pcg763dx0iay" path="res://Free/Items/Hearts/lives.png" id="7_0fucq"]
 [ext_resource type="Script" path="res://Lives.gd" id="7_3eus2"]
+[ext_resource type="PackedScene" uid="uid://demufi73vu8v3" path="res://Collectables/orange.tscn" id="9_yp87x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mu57n"]
 texture = ExtResource("1_153nc")
@@ -1047,3 +1048,12 @@ texture = SubResource("CompressedTexture2D_osh2d")
 position = Vector2(621, 437)
 scale = Vector2(0.0770042, 0.0770042)
 texture = ExtResource("7_0fucq")
+
+[node name="Area2D" parent="." instance=ExtResource("9_yp87x")]
+position = Vector2(253, 220)
+
+[node name="Area2D2" parent="." instance=ExtResource("9_yp87x")]
+position = Vector2(387, 220)
+
+[node name="Area2D3" parent="." instance=ExtResource("9_yp87x")]
+position = Vector2(550, 214)
