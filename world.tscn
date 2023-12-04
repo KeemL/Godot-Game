@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://g0oiwr8rueip"]
+[gd_scene load_steps=12 format=3 uid="uid://g0oiwr8rueip"]
 
 [ext_resource type="Texture2D" uid="uid://dtfp44e06u4s6" path="res://Free/Terrain/Terrain (16x16).png" id="1_153nc"]
 [ext_resource type="Script" path="res://BG.gd" id="1_gx4ah"]
 [ext_resource type="PackedScene" uid="uid://dgcu1ksg6bj6g" path="res://Player/Player.tscn" id="1_qe482"]
 [ext_resource type="Texture2D" uid="uid://bx0px1f22jfcm" path="res://Free/Background/Brown.png" id="2_8yirc"]
 [ext_resource type="PackedScene" uid="uid://tf4rjyb03mqx" path="res://frog.tscn" id="5_2etwl"]
+[ext_resource type="PackedScene" uid="uid://bv0e4tt7o2o8n" path="res://Collectables/cherry.tscn" id="6_jdb8l"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mu57n"]
 texture = ExtResource("1_153nc")
@@ -496,11 +497,20 @@ resource_name = "Game"
 script/source = "extends Node
 "
 
-[sub_resource type="GDScript" id="GDScript_7tgq2"]
+[sub_resource type="GDScript" id="GDScript_jf5oe"]
 script/source = "extends Label
 
 func _process(delta):
-	text = \"HP: \" + str(get_node(\"../../Player/Player\").health)
+	text = \"HP: \" + str(Game.playerHP)
+	
+"
+
+[sub_resource type="GDScript" id="GDScript_0yjke"]
+script/source = "extends Label
+
+func _process(delta):
+	text = \"Gold: \" + str(Game.Gold)
+	
 "
 
 [node name="World" type="Node2D"]
@@ -989,4 +999,19 @@ offset_bottom = 23.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 10
 text = "HP:"
-script = SubResource("GDScript_7tgq2")
+script = SubResource("GDScript_jf5oe")
+
+[node name="gold" type="Label" parent="UI"]
+offset_left = 1.0
+offset_top = 24.0
+offset_right = 41.0
+offset_bottom = 47.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Gold:"
+script = SubResource("GDScript_0yjke")
+
+[node name="Collectables" type="Node2D" parent="."]
+
+[node name="Cherry" parent="Collectables" instance=ExtResource("6_jdb8l")]
+position = Vector2(319, 220)
