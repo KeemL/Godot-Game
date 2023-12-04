@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqomd04w0sx08"]
+
+[ext_resource type="Texture2D" uid="uid://pv2ret5dj263" path="res://Free/Background/back.png" id="1_rond0"]
+[ext_resource type="PackedScene" uid="uid://bwakevb0gdbsf" path="res://BG.tscn" id="2_4jnjy"]
+[ext_resource type="Texture2D" uid="uid://16kb6urrewmu" path="res://Global/gametitle.png" id="3_jtfb7"]
+[ext_resource type="Texture2D" uid="uid://c1i43q5saq0m" path="res://Free/Main Characters/Mask Dude/Jump (32x32).png" id="4_e2yjv"]
+
+[sub_resource type="GDScript" id="GDScript_5wh2s"]
+script/source = "extends Node2D
+
+
+func _ready():
+	Game.playerHP = 3;
+	Game.Gold = 0;
+	Utils.saveGame()
+	Utils.loadGame()
+	
+func _on_quit_pressed():
+	get_tree().quit()
+
+func _on_play_pressed():
+	get_tree().change_scene_to_file(\"res://world.tscn\")
+"
+
+[node name="Main" type="Node2D"]
+
+[node name="Main" type="Node2D" parent="."]
+script = SubResource("GDScript_5wh2s")
+
+[node name="SKY BG" type="Sprite2D" parent="Main"]
+position = Vector2(575, 323.5)
+scale = Vector2(2.99479, 2.69583)
+texture = ExtResource("1_rond0")
+
+[node name="jumphouse" type="Sprite2D" parent="Main"]
+position = Vector2(575, 325)
+scale = Vector2(2.99479, 2.70833)
+texture = ExtResource("1_rond0")
+
+[node name="Play" type="Button" parent="Main"]
+offset_left = 441.0
+offset_top = 428.0
+offset_right = 702.0
+offset_bottom = 472.0
+tooltip_text = "This is the play button"
+text = "Play Game"
+
+[node name="Instructions" type="Button" parent="Main"]
+offset_left = 579.0
+offset_top = 481.0
+offset_right = 701.0
+offset_bottom = 525.0
+text = "Instructions"
+
+[node name="Quit" type="Button" parent="Main"]
+offset_left = 441.0
+offset_top = 481.0
+offset_right = 561.0
+offset_bottom = 525.0
+text = "Quit"
+
+[node name="BG" parent="Main" instance=ExtResource("2_4jnjy")]
+
+[node name="Gametitle" type="Sprite2D" parent="."]
+position = Vector2(590, 151)
+texture = ExtResource("3_jtfb7")
+
+[node name="Jump(32x32)" type="Sprite2D" parent="."]
+position = Vector2(572, 320)
+scale = Vector2(3, 3.15625)
+texture = ExtResource("4_e2yjv")
+
+[connection signal="pressed" from="Main/Play" to="Main" method="_on_play_pressed"]
+[connection signal="pressed" from="Main/Quit" to="Main" method="_on_quit_pressed"]
