@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://g0oiwr8rueip"]
+[gd_scene load_steps=10 format=3 uid="uid://g0oiwr8rueip"]
 
 [ext_resource type="Texture2D" uid="uid://dtfp44e06u4s6" path="res://Free/Terrain/Terrain (16x16).png" id="1_153nc"]
 [ext_resource type="Script" path="res://BG.gd" id="1_gx4ah"]
 [ext_resource type="PackedScene" uid="uid://dgcu1ksg6bj6g" path="res://Player/Player.tscn" id="1_qe482"]
 [ext_resource type="Texture2D" uid="uid://bx0px1f22jfcm" path="res://Free/Background/Brown.png" id="2_8yirc"]
+[ext_resource type="PackedScene" uid="uid://tf4rjyb03mqx" path="res://frog.tscn" id="5_2etwl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mu57n"]
 texture = ExtResource("1_153nc")
@@ -490,6 +491,18 @@ texture = ExtResource("1_153nc")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_mu57n")
 
+[sub_resource type="GDScript" id="GDScript_0hv47"]
+resource_name = "Game"
+script/source = "extends Node
+"
+
+[sub_resource type="GDScript" id="GDScript_7tgq2"]
+script/source = "extends Label
+
+func _process(delta):
+	text = \"HP: \" + str(get_node(\"../../Player/Player\").health)
+"
+
 [node name="World" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -950,5 +963,30 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "This is the world."
 
-[node name="Player" parent="." instance=ExtResource("1_qe482")]
-position = Vector2(320, 272)
+[node name="Player" type="Node2D" parent="."]
+position = Vector2(106, 250)
+
+[node name="Player" parent="Player" instance=ExtResource("1_qe482")]
+position = Vector2(214, 23)
+
+[node name="Mobs" type="Node2D" parent="."]
+position = Vector2(106, 250)
+
+[node name="Frog" parent="Mobs" instance=ExtResource("5_2etwl")]
+
+[node name="Frog2" parent="Mobs" instance=ExtResource("5_2etwl")]
+position = Vector2(81, -10)
+
+[node name="Frog3" parent="Mobs" instance=ExtResource("5_2etwl")]
+position = Vector2(348, 21)
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = SubResource("GDScript_0hv47")
+
+[node name="health" type="Label" parent="UI"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "HP:"
+script = SubResource("GDScript_7tgq2")

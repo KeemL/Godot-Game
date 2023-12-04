@@ -14,7 +14,7 @@ func _on_play_pressed():
 	get_tree().change_scene_to_file(\"res://world.tscn\")
 "
 
-[node name="Node2D" type="Node2D"]
+[node name="Main" type="Node2D"]
 
 [node name="Main" type="Node2D" parent="."]
 script = SubResource("GDScript_5wh2s")
@@ -41,7 +41,7 @@ offset_right = 752.0
 offset_bottom = 586.0
 text = "Quit"
 
-[node name="BG" parent="." instance=ExtResource("1_0eqok")]
+[node name="BG" parent="Main" instance=ExtResource("1_0eqok")]
 
 [connection signal="pressed" from="Main/Play" to="Main" method="_on_play_pressed"]
 [connection signal="pressed" from="Main/Quit" to="Main" method="_on_quit_pressed"]
