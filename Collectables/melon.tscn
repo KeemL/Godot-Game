@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bv0e4tt7o2o8n"]
+[gd_scene load_steps=25 format=3 uid="uid://bv0e4tt7o2o8n"]
 
 [ext_resource type="Texture2D" uid="uid://dhvqkv3h1l1mj" path="res://Free/Items/Fruits/Collected.png" id="1_msq8o"]
 [ext_resource type="Texture2D" uid="uid://bdj5lccon332a" path="res://Free/Items/Fruits/Melon.png" id="2_s4pt2"]
@@ -15,7 +15,8 @@ func _on_body_entered(body):
 		var tween = get_tree().create_tween()
 		var tween1 = get_tree().create_tween()
 		tween.tween_property(self, \"position\", position - Vector2(0,35), 0.4)
-		tween1.tween_property(self, \"modulate:a\", 0, 0.3)
+		tween1.tween_property(self, \"modulate:a\", 0, 1)
+		get_node(\"AnimatedSprite2D\").play(\"hit\")
 		
 		tween.tween_callback(queue_free)
 		
@@ -52,22 +53,6 @@ region = Rect2(160, 0, 32, 32)
 atlas = ExtResource("2_s4pt2")
 region = Rect2(0, 0, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_0mcx2"]
-atlas = ExtResource("2_s4pt2")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7r7rm"]
-atlas = ExtResource("2_s4pt2")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b1bgr"]
-atlas = ExtResource("2_s4pt2")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yuvf7"]
-atlas = ExtResource("2_s4pt2")
-region = Rect2(128, 0, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_gr736"]
 atlas = ExtResource("2_s4pt2")
 region = Rect2(160, 0, 32, 32)
@@ -75,18 +60,6 @@ region = Rect2(160, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_14s66"]
 atlas = ExtResource("2_s4pt2")
 region = Rect2(192, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0wyxa"]
-atlas = ExtResource("2_s4pt2")
-region = Rect2(224, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kip3q"]
-atlas = ExtResource("2_s4pt2")
-region = Rect2(256, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i4tk6"]
-atlas = ExtResource("2_s4pt2")
-region = Rect2(288, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q44uj"]
 atlas = ExtResource("2_s4pt2")
@@ -99,10 +72,6 @@ region = Rect2(352, 0, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_dfpmu"]
 atlas = ExtResource("2_s4pt2")
 region = Rect2(384, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i3f2s"]
-atlas = ExtResource("2_s4pt2")
-region = Rect2(416, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dxygl"]
 atlas = ExtResource("2_s4pt2")
@@ -137,7 +106,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dd4nb")
 }],
-"loop": true,
+"loop": false,
 "name": &"hit",
 "speed": 5.0
 }, {
@@ -146,31 +115,16 @@ animations = [{
 "texture": SubResource("AtlasTexture_6p4do")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_0mcx2")
+"texture": SubResource("AtlasTexture_6p4do")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_7r7rm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_b1bgr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yuvf7")
+"texture": SubResource("AtlasTexture_6p4do")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gr736")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_14s66")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0wyxa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kip3q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i4tk6")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_q44uj")
@@ -180,9 +134,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dfpmu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i3f2s")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dxygl")
@@ -195,7 +146,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="Animation" id="Animation_5w8hj"]
@@ -282,7 +233,7 @@ shape = SubResource("CircleShape2D_r5w8a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_e5l8a")
-animation = &"idle"
+animation = &"hit"
 frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
