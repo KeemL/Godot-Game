@@ -10,6 +10,7 @@ script/source = "extends Node2D
 func _ready():
 	Game.playerHP = 3;
 	Game.Gold = 0;
+	
 	Utils.saveGame()
 	Utils.loadGame()
 	
